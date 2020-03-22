@@ -1,0 +1,24 @@
+= render partial: 'shared/headerA'
+
+.Link
+  = link_to("新規投稿", new_blog_path, class: "Link_new")
+
+.Body
+  - @posts.each do |post|
+    .Content 
+      .Content__title
+        = post.title
+      .Content__created
+        = post.created_at
+
+
+
+
+
+
+
+
+
+
+
+= render partial: 'shared/footerA'

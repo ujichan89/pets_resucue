@@ -1,0 +1,20 @@
+= render partial: 'shared/headerA'
+
+
+.Body
+  /*下記は左のリンク部分*/
+  = render partial: 'shared/left-content'
+  .Body__content
+    /*下記はメインのツイート部分
+    .Body__content__main
+      ここにツイートを表示します
+    -# .Body__content__submit
+    -#   = form_with  do |f|
+    -#     = f.text_field :keyword, placeholder: "コメントを入力して下さい",  class: "message-input"
+    -#     = f.submit "送信", class:"submit-btn"
+
+
+
+
+= render partial: 'shared/footerA'
+
