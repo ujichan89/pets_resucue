@@ -1,5 +1,13 @@
-.Wapper{
-  width: 100%;
-  height: 100vh;
-}
+// .Wapper{
+//   width: 100%;
+//   height: 100vh;
+// }
 
+.Body{
+  &__content{
+    .main{
+      height: 500px;
+      background-color: seagreen;
+    }
+  }
+}

@@ -4,10 +4,17 @@
   height: 200px;
   background-image:image-url('record/image.02.jpg');
   display: flex;
-  p{
+  .Header_link{
+    height: 45px;
     font-size: 32px;
     font-weight: bolder;
+    color: rgba(82, 27, 7, 0.763);
+    text-decoration: none;
     text-align: center;
     margin-left: 40%;
+    margin-top: 70px;
+    &:hover{
+      color: skyblue;
+    }
   }
 }

@@ -4,12 +4,14 @@
   = link_to("新規投稿", new_blog_path, class: "Link_new")
 
 .Body
+  = render partial:'shared/left-content'
   - @posts.each do |post|
     .Content 
       .Content__title
         = post.title
       .Content__created
         = post.created_at
+ 
 
 
 
