@@ -49,6 +49,9 @@ test:
 #
 production:
   <<: *default
-  database: pets_resucue_production
-  username: pets_resucue
-  password: <%= ENV['PETS_RESUCUE_DATABASE_PASSWORD'] %>
+  # database: pets_resucue_production
+  # username: pets_resucue
+  # password: <%= ENV['PETS_RESUCUE_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5

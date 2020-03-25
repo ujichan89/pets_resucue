@@ -5,11 +5,12 @@ class BlogController < ApplicationController
   end
 
   def new
-    post = Post.new
+    @post = Post.new
   end
 
   def create
     Post.create(post_params)
+    redirect_to blog_index_path
   end
 
   def show
