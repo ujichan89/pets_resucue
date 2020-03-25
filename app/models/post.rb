@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
 
-  # def index
-  #   @post = Post.all
-  end
+  validates :title, :content, presence: true
+  
+end
 
