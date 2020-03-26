@@ -6,11 +6,10 @@
 .Body
   = render partial:'shared/left-content'
   - @posts.each do |post|
-    .Content 
-      .Content__title
-        = post.title
-      .Content__created
-        = post.created_at
+    .Body__content
+      = link_to post.title, blog_path(post.id), class:"content"
+    .Body__bottom
+      = post.created_at
  
 
 

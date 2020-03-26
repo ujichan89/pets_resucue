@@ -14,7 +14,7 @@ class BlogController < ApplicationController
   end
 
   def show
-    # @user = Post.find(params[:id])
+    @post = Post.find(params[:id])
   end
 
   private
