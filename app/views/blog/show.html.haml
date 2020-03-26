@@ -7,8 +7,9 @@
       = @post.title
     .Bodya__content__dete
       = @post.created_at
-    -# .Bodya__content__text
-    -#   = @post
+    .Body__content__manage
+      = link_to "編集", edit_blog_path(@post.id), class: "postManage__edit"
+      = link_to "削除", blog_path(@post.id), method: :delete, class:"postManage__delete"
     .Bodya__content__coment
       = simple_format @post.content
 

@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   root "window#index"
   resources :tweets, only:[:index]
-  resources :blog, only:[:index, :new, :create, :show] 
+  resources :blog, only:[:index, :new, :create, :show, :edit, :update, :destroy] 
 end
