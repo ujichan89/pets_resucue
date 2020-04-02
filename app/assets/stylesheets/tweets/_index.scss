@@ -5,34 +5,34 @@
   &__content{
     width: calc(100% - 300px);
     box-sizing: border-box;
-    &__main{
+    .content_post{
       width: calc(100% - 300px);
       height: 250px;
       background-color: yellow;
       position: absolute;
       border-bottom: 3px dotted pink;
     }
-    &__submit{
-      width: calc(100% - 300px);
-      height: 100px;
-      position: absolute;
-      bottom: 0em;
-      border-top: 3px dotted pink;
-      .message-input{
-        width: 65%;
-        height: 50px;
-        margin-top: 25px;
-        font-size: 15px;
-        margin-left: 100px;
-      }
-      .submit-btn{
-        height: 40px;
-        font-size: 20px;
-        background-color: yellowgreen;
-        &:hover{
-          background-color:skyblue;
-        }
-      }
-    }
+    // &__submit{
+    //   width: calc(100% - 300px);
+    //   height: 100px;
+    //   position: absolute;
+    //   bottom: 0em;
+    //   border-top: 3px dotted pink;
+    //   .message-input{
+    //     width: 65%;
+    //     height: 50px;
+    //     margin-top: 25px;
+    //     font-size: 15px;
+    //     margin-left: 100px;
+    //   }
+    //   .submit-btn{
+    //     height: 40px;
+    //     font-size: 20px;
+    //     background-color: yellowgreen;
+    //     &:hover{
+    //       background-color:skyblue;
+    //     }
+      // }
+    // }
   }
 }
