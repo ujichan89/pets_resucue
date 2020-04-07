@@ -1,11 +1,19 @@
 = render partial: 'shared/headerA'
 
+.Link
+  = link_to("新規投稿", new_tweet_path, class: "Link_new")
 
 .Body
   = render partial: 'shared/left-content'
   .Body__content
     - @tweets.each do |tweet|
       .content_post{:style =>"background-image:url(#{tweet.image});"}
+        %span
+          = image_tag 'arrow_top.png'
+          %li
+            = link_to "編集", edit_tweet_path(tweet.id), class:"tweet_edit"
+          %li 
+            = link_to "削除",tweet_path(tweet.id), method: :delete
         = simple_format(tweet.text)
         = tweet.text
         = tweet.name
@@ -15,4 +23,3 @@
 
 
 = render partial: 'shared/footerA'
-
