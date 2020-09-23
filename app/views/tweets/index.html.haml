@@ -6,7 +6,7 @@
 .Body
   = render partial: 'shared/left-content'
   .Body__content
-    - @tweets.each do |tweet|
+    - @tweets.each do |tweets|
       .content_post{:style =>"background-image:url(#{tweet.image});"}
         %span
           = image_tag 'arrow_top.png'
