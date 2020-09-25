@@ -6,17 +6,17 @@
 .Body
   = render partial: 'shared/left-content'
   .Body__content
-    - @tweets.each do |tweet|
-      .content_post{:style =>"background-image:url(#{tweet.image});"}
+    - @tweets.each do |tweets|
+      .content_post{:style =>"background-image:url(#{tweets.image});"}
         %span
           = image_tag 'arrow_top.png'
           %li
-            = link_to "編集", edit_tweet_path(tweet.id), class:"tweet_edit"
+            = link_to "編集", edit_tweet_path(tweets.id), class:"tweet_edit"
           %li 
-            = link_to "削除",tweet_path(tweet.id), method: :delete
-        = simple_format(tweet.text)
-        = tweet.text
-        = tweet.name
+            = link_to "削除",tweet_path(tweets.id), method: :delete
+        = simple_format(tweets.text)
+        = tweets.text
+        = tweets.name
       
 
 
